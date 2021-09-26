@@ -136,14 +136,142 @@
   \vspace{15px}
 
   Based on the conservation of energy and momentum and using Eq $(1)$ and Eq $(2)$ we can conclude the following equation which shows
-  how the wavelength of the photon changes before and after the collision due the the Compton Effect.
-  $$\Delta \lambda=\dfrac{2 \pi \hbar}{mc} \left[1-cos(\theta)\right] ~~~~~~~ (3)$$
+  how the wavelength of the photon changes before and after the collision due the the Compton Effect. For a photon scattered from
+  a free electron predict a frequency shift of the photon given by
+  $$\Delta \lambda=\dfrac{2 \pi \hbar}{mc} \left[1-cos(\theta)\right]=\lambda_c \left[1-cos(\theta)\right]  ~~~~~~~ (3)$$
+
+  where $\lambda_c \approx 2.4 ~ pm$ is the Compton wavelength, with $m$ the mass of the electron. The corresponding energy shift is given by
+  $$\dfrac{E^'}{E}=\dfrac{1}{1+\left(\dfrac{E}{mc^2}\right)\left(1-cos (\theta)\right)} ~~~~~~~ (4)$$
 
   \vspace{10px}
 
   \textbf{IV. Experimental Procedure}
 
+  \vspace{10px}
+
+  We just followed the given steps in the lab.
+
+
+  \begin{figure}[htbp]
+    \includegraphics[height=5cm, width=10cm]{Two.JPG}
+    \caption{
+      Lead blocks were placed between the Cs-137 and the scintillation counter to prevent gamma rays from the
+      Cs-137 travelling directly into the scintillation counter without being scattered
+    }
+  \end{figure}
+
+
   \textbf{V. Results}
+
+  PICTURES GO HERE
+
+  \textbf{Compton Scattering Angular Dependence and Electron Mass}
+  \\
+  \\
+  As it was mentioned in the lab steps we need to rearrange the Compton scattering formula (Eq. 4):
+  \\
+  \\
+  \\
+  $
+    E^'=\left[1+\left(\dfrac{E}{mc^2}\right)  \left(1-cos(\theta)\right)\right]=E
+    \\
+    \\
+    \\
+    \therefore ~~~ E^'=E \left[1+\left(\dfrac{E}{mc^2}\right)  \left(1-cos(\theta)\right)\right]^{-1} ~~~~~~~ (5)
+    \\
+    \\
+  $
+  For CS-137 we have $E=662 ~ KeV$ therefore we have
+  \\
+  \\
+  \\
+  $
+    E^'=E \left[1+\left(\dfrac{662 ~ KeV}{mc^2}\right)  \left(1-cos(\theta)\right)\right]^{-1}
+  $
+  \\
+  \\
+  \\
+  \\
+  By rearranging Eq (5) to form a linear, we get the following
+  \\
+  \\
+  $
+    \left(E^'\right)^{-1}=\left(E \left[1+\left(\dfrac{E}{mc^2}\right)  \left(1-cos(\theta)\right)\right]^{-1}\right)^{-1}
+    \\
+    \\
+    \\
+    \dfrac{1}{E^'}=\dfrac{1}{E} \left[1+\dfrac{E}{mc^2} \left(1-cos(\theta)\right)\right]
+    \\
+    \\
+    \\
+    \dfrac{1}{E^'}=\dfrac{1}{E}+\dfrac{1}{mc^2} \left(1-cos(\theta)\right)
+    \\
+    \\
+    \\
+    \dfrac{1}{E^'}=\left(\dfrac{1}{E}+\dfrac{1}{mc^2}\right)-\dfrac{1}{mc^2} cos(\theta)
+    \\
+    \\
+    \\
+    \\
+    \begin{cases}
+      y=\dfrac{1}{E^'}
+      \\
+      \\
+      \alpha=\dfrac{1}{E}+\dfrac{1}{mc^2}
+      \\
+      \\
+      \beta=-\dfrac{1}{mc^2}
+      \\
+      \\
+      x=cos(\theta)
+    \end{cases}
+    \Longrightarrow
+    y=\beta x+\alpha
+    \\
+    \\
+    \\
+    \\
+    \begin{cases}
+      \alpha=\dfrac{1}{\left(662 \times 10^3 ~ eV\right) \left(1.6021 \times 10^{-19}\right)}+\dfrac{1}{\left(9.11 \times 10^{-31} ~ kg\right) ~ \left(3 \times 10^8 ~ m/s\right)^2}=2.1625 \times 10^{13} ~~ J^{-1}
+      \\
+      \\
+      \beta=-\dfrac{1}{9.11 \times 10^{-31} ~ kg \left(3 \times 10^8 ~ m/s\right)^2}=-1.2197 \times 10^{13} ~~ J^{-1} 
+    \end{cases}
+    \\
+    \\
+    \\
+    \\
+    \\
+    \therefore ~~~~ y=-\left(1.2197 \times 10^{13}\right) x+\left(2.1625 \times 10^{13}\right) ~~~ \checkmark
+    \\
+    \\
+    \\
+    \\
+    \therefore ~~~~ E^'=\dfrac{1}{-\left(1.2197 \times 10^{13}\right) x+\left(2.1625 \times 10^{13}\right)} ~~~ \checkmark
+    \\
+    \\
+    \\
+  $
+  Now based on the obtained equations we have the experimental electron masss as
+  \\
+  \\
+  \\
+  $
+    m=2\dfrac{1}{c^2 \left(\alpha-\beta-\dfrac{1}{E}\right)}
+    =2\dfrac{1}{\left(3 \times 10^8\right)^2 \left(
+      \left(2.1625 \times 10^{13}\right)
+      +\left(1.2197 \times 10^{13}\right)
+      -\dfrac{1}{662 \times 10^3}
+    \right)}
+    \\
+    \\
+    \\
+    \\
+    \therefore ~~~~ m=6.66 \times 10^{-31} ~~~ kg
+  $
+
+
+  \vspace{30px}
 
   \textbf{VI. Discussion}
 
