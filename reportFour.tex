@@ -82,7 +82,8 @@
 
   \vspace{10px}
 
-  This lab report represents the experimental procedure we did to learn about the \emph{Pulsed NMR} \textcite{One}
+  This lab report represents the experimental procedure we did to learn about the \emph{Pulsed Nuclear 
+  Magnetic Resonance (Pulsed NMR)}. The Nuclei is studied in the presence of a magnetic field.
 
   \vspace{20px}
 
@@ -91,7 +92,9 @@
 
   \vspace{10px}
 
-  TODO 
+  Nuclear magnetic resonance (NMR) was worked on in 1945 by 2 physicists, Edward M. Purcell and Felix Bloch. They were given
+  the 1952 Noblem Prize in physics for their work. \textcite{One} Basically NMR is about the spins of protons when a magnetic field 
+  is applied and how the magnetic fields can line up protons.
 
   \vspace{20px}
 
@@ -100,7 +103,9 @@
 
   \vspace{10px}
 
-  TODO 
+  The discovery of NMR goes back to the 1930s when Isidor Isaac Rabi and his team were measuring the the magnetic properties of 
+  nuclei like hydrogen. They observed how an oscillating magnetic field is able to effect principal magnetic orientation 
+  of nuclei.\textcite{Two}
 
   \vspace{20px}
 
@@ -109,16 +114,21 @@
 
   \vspace{10px}
 
-  TODO 
-
-  \vspace{20px}
+  The precession rate (resonance frequency) of protons depends linearly on the magnetic field and can be calculated using the following equation
+  $$
+    f_0(MHz)=4.258 ~ B_0
+  $$
+  In order to calculate the spin-spin relaxation time, we could use the below equation.
+  $$
+    M=M_0 ~ exp \left(-\dfrac{t}{T}\right)
+  $$
 
 
   \textbf{IV. Experimental Procedure}
 
   \vspace{10px}
 
-  We followed the given steps in the lab. TODO...
+  For this experimental, we followed the steps provived in the lab instruction. \textcite{Three}
   
   \vspace{20px}
 
@@ -138,29 +148,22 @@
   \vspace{10px}
 
   In this plot, the amplitudes is represented as a function of time. We adjust the oscilloscope to see 
-  the full FID on it clearly and recorded the amplitudes as a function of time for 12 values using the cursor on the 
-  screen. I used a \textbf{Linear Fit} to the logarithm of amplitudes. My experimental value of $T_2^*$, and its uncertainty 
-  is $0.008663 \pm 0.0004553$ which is a smaller than $0.1 ~ ms$ as it was mentioned on the lab instructions. Also, I could use a 
-  \textbf{Curve Fit} to the amplitudes to find a experimentally value for $T_2^*$.
-
-  \vspace{10px}
-
+  the full FID on it clearly and recorded the amplitudes as a function of time for 9 values using the cursor on the 
+  screen. My experimental value of $T_2^*$, and its uncertainty is $63.21 \pm 4.254 ~ \mu s$ which is a smaller than $0.1 ~ ms$ as 
+  it was mentioned on the lab instructions. Also, I could use a \textbf{Curve Fit} to the amplitudes to find a experimentally value for $T_2^*$.
   The magnetic field can be found with the help of $f_0=4.258 B_0$. We set the frequency to $15.18805 ~ MHz$, 
-  therefore $B_0=3.5669 ~ KG$.  
-
-  1) The reason this FID happens is that
-
-  2) Why is it only an apparent spin-spin relaxation time?
-
-  3) The physical mechanism of how the pulse sequence rotates the spins to yield the FID (Free Induction Decay)
+  therefore $B_0=3.5669 ~ KG$. Essentially, an electromagnetic signal lines up the spin of protons with the magnetic field in the XY plane.
+  When the component is in the XY plane, then the precessing magnetisation will induce 
+  a corresponding voltage which oscillates and converges at the end. the maximum amplitude happens when at $90^{\circ}$.
+  It's only an apparent relaxation time since the direction that it is coming is from the differences in precession frequency, and not 
+  from the changes in the precession frequency due to changes in the local magnetic field.
 
   \begin{center}
     \begin{tabular}{ |c| } 
      \hline
-     Log A = mx+b  \\ 
-     m (Slope): -0.008663 +/- 0.0004553  \\ 
-     b (Y-Intercept): 3.851 +/- 0.09414  \\ 
-     Correlation: -0.9918 and RMSE: 0.08853 \\
+     $M=M_0 ~ exp \left(-\dfrac{t}{T_2^*}\right)$  \\ 
+     $M_0=4202 \pm 378.0 ~ mV$ \\ 
+     $T_2^*=63.21 \pm 4.254 ~ \mu s$ \\
      \hline
     \end{tabular}
   \end{center}
@@ -185,8 +188,9 @@
     \begin{tabular}{ |c| } 
      \hline
      Avg A = $A(t-a)^2+B$  \\ 
-     A: $25.65 +/- 0.6769$ and a: $18.88 +/- 0.01401$  \\ 
-     B: $19.27 +/- 1.270$  \\ 
+     A: $25.65 +/- 0.6769 ~ mV/ms^2$ \\
+     a: $18.88 +/- 0.01401 ms$ \\ 
+     B: $19.27 +/- 1.270 ~ mV$  \\ 
      Correlation: $0.9927$ and RMSE: 4.131 \\
      \hline
     \end{tabular}
@@ -213,10 +217,9 @@
   \begin{center}
     \begin{tabular}{ |c| } 
      \hline
-     Avg A = $mx+b$  \\ 
-     m (Slope): -0.01598 +/- 0.0006314  \\ 
-     b (Y-Intercept): 0.5741 +/- 0.01669  \\ 
-     Correlation: $-0.9938$ and RMSE: 0.03609 \\
+     $M=M_0 ~ exp \left(-\dfrac{t}{T_2^*}\right)$  \\ 
+     $M_0=4.054 \pm 0.08151 ~ mV$ \\ 
+     $T_2^*=22.82 \pm 1.081 ~  ms$ \\
      \hline
     \end{tabular}
   \end{center}
@@ -228,7 +231,7 @@
 
   \vspace{10px}
 
-  In this experiment...
+  By following the lab report document for this experiment, we were able to find the relaxation time values. 
   
   \vspace{20px}
 
@@ -237,7 +240,12 @@
 
   \vspace{10px}
 
-  This is conclusions....
+  In this experiment, Pulsed Nuclear Magnetic Resonance, we were able to calculate spin-latticeand spin-spin relaxation times. The spins start
+  to precess about the Z axis ($\hat{k}$). Right after the spins are in the XY plane, and the precessing start to happen, part of the spins move 
+  slower in comparesion to other spins which causes some differences between them. 
+  After the Initial $90^{\circ}$ pulse, the protons spins are aligned in XY plane. They start to spread out and then once we hit them with $180^{\circ}$ 
+  pulse then the spins are pointed in the opposite directions and instead of spreading out they get togother. 
+
   
   \vspace{20px}
 
