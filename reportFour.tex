@@ -131,7 +131,7 @@
 
   \pagebreak
 
-  \includegraphics[height=11cm, width=15cm]{Fig1.JPG}
+  \includegraphics[height=9cm, width=14cm]{Fig1.JPG}
   
   \textbf{Figure 1, Apparent Spin-Spin Relaxation Time $(T_2^*)$}
 
@@ -154,9 +154,20 @@
 
   3) The physical mechanism of how the pulse sequence rotates the spins to yield the FID (Free Induction Decay)
 
+  \begin{center}
+    \begin{tabular}{ |c| } 
+     \hline
+     Log A = mx+b  \\ 
+     m (Slope): -0.008663 +/- 0.0004553  \\ 
+     b (Y-Intercept): 3.851 +/- 0.09414  \\ 
+     Correlation: -0.9918 and RMSE: 0.08853 \\
+     \hline
+    \end{tabular}
+  \end{center}
+        
   \pagebreak
 
-  \includegraphics[height=11cm, width=15cm]{Fig2.JPG}
+  \includegraphics[height=9cm, width=14cm]{Fig2.JPG}
 
   \textbf{Figure 2, Spin-Lattice Relaxation Time $(T_1)$}
 
@@ -170,11 +181,45 @@
   two pusles was $7.6 \times 2= ~ 15.2 ~ ms$ which is the approximate spin-lattice relaxation time $T_1^'$. The 
   approximate spin-lattice relaxation time is consistent with my value since they are on around the same range of magnitudes.
 
+  \begin{center}
+    \begin{tabular}{ |c| } 
+     \hline
+     Avg A = $A(t-a)^2+B$  \\ 
+     A: $25.65 +/- 0.6769$ and a: $18.88 +/- 0.01401$  \\ 
+     B: $19.27 +/- 1.270$  \\ 
+     Correlation: $0.9927$ and RMSE: 4.131 \\
+     \hline
+    \end{tabular}
+  \end{center}
+
   \pagebreak
 
-  \includegraphics[height=11cm, width=15cm]{Fig3.JPG}
+  \includegraphics[height=9cm, width=14cm]{Fig3.JPG}
 
   \textbf{Figure 3, Spin-Spin Relaxation Time $(T2)$}
+
+  \vspace{10px}
+
+  This plot is for the echo amplitude as a function of the total \textbf{Delay Time} $(2 \tau)$. The vertical axis is 
+  the logarithm of amplitudes. I used a simple exponential function to fit my data on a Semi-Logarithmic graph. My best experimental value for $T_2$, and its uncertainty, deduced from the
+  exponential fit parameters is $22.82 \pm 1.082 ~ ms$. 
+  
+  We know that the spin-spin relaxation time concerns changes in their precession frequency. In other words, it is the time that spins stop precessing
+  synchronously. There is a difference between the apparent spin-spin relaxation time and  spin-spin relaxation time. the apparent one is 
+  differences in spins precession frequency that causes spins' dealy time but spin-spin relaxation one is about changes in precession frequency 
+  due to changes in the local magnetic field. From the lab document we learned "\emph{The analogy involves changes in
+  the local gravity (or vertical acceleration) that would change the precession frequency of the top.}" Hence, the two values are different.
+
+  \begin{center}
+    \begin{tabular}{ |c| } 
+     \hline
+     Avg A = $mx+b$  \\ 
+     m (Slope): -0.01598 +/- 0.0006314  \\ 
+     b (Y-Intercept): 0.5741 +/- 0.01669  \\ 
+     Correlation: $-0.9938$ and RMSE: 0.03609 \\
+     \hline
+    \end{tabular}
+  \end{center}
 
   \pagebreak
 
